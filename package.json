@@ -5,6 +5,7 @@
   "author": "phoenix1796 <phoenix.prog1796@gmail.com>",
   "description": "A simple helpful robot for your Company",
   "dependencies": {
+    "express": "^4.14.0",
     "hubot": "^2.19.0",
     "hubot-diagnostics": "0.0.1",
     "hubot-google-images": "^0.2.6",
