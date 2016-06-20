@@ -4,7 +4,8 @@ module.exports = function(robot){
 	robot.hear(/hello/igm, function(msg){
 		msg.send("world!");
 	});
-	app.get('/',function(req,res){res.send("Hello")});
+	robot.express.get('/',function(req,res){res.send("Hello")});
+	robot.express.listen(process.env.PORT,process.env.BIND_ADDRESS);
 	robot.respond(/show me the money/igm,function(msg){
 		msg.reply('filled :P');
 	});
